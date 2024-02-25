@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  workflow_run:
+    workflows:
+      - Sync, build and deploy Plasmic app
 
 permissions:
   contents: read
