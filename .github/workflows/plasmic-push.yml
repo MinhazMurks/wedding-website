@@ -29,7 +29,7 @@ jobs:
           path: node_modules
       - id: build
         name: Build Plasmic app
-        uses: plasmicapp/plasmic-action@master
+        uses: MinhazMurks/plasmic-action@master
         with:
           run: build
           branch: main
