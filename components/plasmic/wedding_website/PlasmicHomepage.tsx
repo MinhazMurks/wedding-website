@@ -283,7 +283,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text___6T4L6
                     )}
                   >
-                    {"Building things for building things.\n"}
+                    {"Building things for building things.z\n"}
                   </div>
                 </div>
               </div>
