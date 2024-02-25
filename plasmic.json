@@ -1,0 +1,388 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "displayName": "hostless-reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
+      "projectApiToken": "3n3SKEMyDjMJptsNvaK6yxRaa8PAgqwkfIhRbKT4ZG9SobeM3Kb5rE2pSYmbR338Z5p6vBTScOAnptZwGSbQ",
+      "projectName": "react-youtube",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_youtube/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CHO21V9uYw",
+          "name": "YouTube",
+          "displayName": "hostless-youtube",
+          "componentImportPath": "@plasmicpkgs/react-youtube"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "5dGW8Awro3qq8Hh5MveXLP",
+      "projectApiToken": "wVHvHSTRyoO1MQddr5ypmW8AfwiMMy7h0Iaj4Q2YmYLLEo2A4L6pLn8Fydm8wQkTAJV9uAD5bJPo8bmGg",
+      "projectName": "lottie-react",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/lottie_react/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "BPNsJ2qis6",
+          "name": "LottieWrapper",
+          "displayName": "hostless-lottie-react",
+          "componentImportPath": "@plasmicpkgs/lottie-react"
+        },
+        {
+          "id": "vbTFHH9P-cuM",
+          "name": "AsyncLottieWrapper",
+          "displayName": "hostless-lottie-async-react",
+          "componentImportPath": "@plasmicpkgs/lottie-react"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
+      "projectApiToken": "L5kqyh9xqKCqpdc8gqCglVcLZTxdkkP1Dt9pLUlWpyKVItIbbXr5272ePgMpZZiezhSe0AIOuQB353jQnw",
+      "projectName": "plasmic-cms",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_cms/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_cms/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "w6HdOz-Pcn",
+          "name": "CmsRowField",
+          "displayName": "hostless-plasmic-cms-row-field",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "Ds6UdKRHmq",
+          "name": "CmsRowLink",
+          "displayName": "hostless-plasmic-cms-row-link",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "dj_Vc2QmFA",
+          "name": "CmsRowImage",
+          "displayName": "hostless-plasmic-cms-row-image",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "r3UO4W-xcR",
+          "name": "CmsRowFieldValue",
+          "displayName": "hostless-plasmic-cms-row-value",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "OREVbGCcgN",
+          "name": "CmsCredentialsProvider",
+          "displayName": "hostless-plasmic-cms-credentials-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8N9-WfZSaq",
+          "name": "CmsQueryRepeater",
+          "displayName": "hostless-plasmic-cms-query-repeater",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8uEaibqi6348",
+          "name": "CmsCount",
+          "displayName": "hostless-plasmic-cms-count",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "izEXE37dzqFMYydSKQTMwJ",
+      "projectApiToken": "BtHcN7R1sF04gviYThTNc3ddIluz4fbM8j4oyoMppWkHMPLQNoxMeq7XWt4GYR5kKj2yXvEE3pqcJ8nxCWjg",
+      "projectName": "Wedding-Website",
+      "version": "latest",
+      "cssFilePath": "plasmic/wedding_website/plasmic.module.css",
+      "components": [
+        {
+          "id": "S6JrvlGm1vd3",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "izEXE37dzqFMYydSKQTMwJ",
+          "renderModuleFilePath": "plasmic/wedding_website/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/wedding_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        },
+        {
+          "id": "TULi8pNjkL9u",
+          "name": "CopyableLink",
+          "type": "managed",
+          "projectId": "izEXE37dzqFMYydSKQTMwJ",
+          "renderModuleFilePath": "plasmic/wedding_website/PlasmicCopyableLink.tsx",
+          "importSpec": {
+            "modulePath": "CopyableLink.tsx"
+          },
+          "cssFilePath": "plasmic/wedding_website/PlasmicCopyableLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "qC0nhTpUWlKT",
+          "name": "TravelLodging",
+          "type": "managed",
+          "projectId": "izEXE37dzqFMYydSKQTMwJ",
+          "renderModuleFilePath": "plasmic/wedding_website/PlasmicTravelLodging.tsx",
+          "importSpec": {
+            "modulePath": "../pages/travel-lodging.tsx"
+          },
+          "cssFilePath": "plasmic/wedding_website/PlasmicTravelLodging.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/travel-lodging"
+        },
+        {
+          "id": "Gh37LSrWbm1n",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "izEXE37dzqFMYydSKQTMwJ",
+          "renderModuleFilePath": "plasmic/wedding_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/wedding_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "q3t59J6BzNMN",
+          "name": "TextInput",
+          "type": "managed",
+          "projectId": "izEXE37dzqFMYydSKQTMwJ",
+          "renderModuleFilePath": "plasmic/wedding_website/PlasmicTextInput.tsx",
+          "importSpec": {
+            "modulePath": "TextInput.tsx"
+          },
+          "cssFilePath": "plasmic/wedding_website/PlasmicTextInput.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        }
+      ],
+      "icons": [
+        {
+          "id": "EmGEcYOnfkk0",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "uEz53hchUsbf",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "jXw4_V20_0N6",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "AylNlyNLQHZw",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "hosQIuGq9s5_",
+          "name": "SearchsvgIcon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Searchsvg.tsx"
+        },
+        {
+          "id": "4OSv8q77pH5j",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "5oZLK7TbgCyl",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "s_k-724ei_i3",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "R24nyc_5vxfr",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/wedding_website/icons/PlasmicIcon__Icon7.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "xxfe1Al_ikuF",
+          "name": "image",
+          "filePath": "../public/plasmic/wedding_website/images/image.jpg"
+        },
+        {
+          "id": "6QOwZcjTagmM",
+          "name": "image 2",
+          "filePath": "../public/plasmic/wedding_website/images/image2.svg"
+        },
+        {
+          "id": "7G7l_KkvXEGO",
+          "name": "image 3",
+          "filePath": "../public/plasmic/wedding_website/images/image3.png"
+        },
+        {
+          "id": "y8K0ZY5XGD_6",
+          "name": "image 4",
+          "filePath": "../public/plasmic/wedding_website/images/image4.png"
+        },
+        {
+          "id": "HPFe1SdQ1Hyg",
+          "name": "image 5",
+          "filePath": "../public/plasmic/wedding_website/images/image5.jpg"
+        },
+        {
+          "id": "r0_xh7hAbwEM",
+          "name": "image 6",
+          "filePath": "../public/plasmic/wedding_website/images/image6.jpg"
+        },
+        {
+          "id": "xDNI8dceMmyo",
+          "name": "image 7",
+          "filePath": "../public/plasmic/wedding_website/images/image7.jpg"
+        },
+        {
+          "id": "xJ-IzbG3Bzbm",
+          "name": "image 8",
+          "filePath": "../public/plasmic/wedding_website/images/image8.jpg"
+        },
+        {
+          "id": "j7KMN3wML6mr",
+          "name": "image 9",
+          "filePath": "../public/plasmic/wedding_website/images/image9.jpg"
+        },
+        {
+          "id": "X39NqjRVBoRJ",
+          "name": "image 10",
+          "filePath": "../public/plasmic/wedding_website/images/image10.jpg"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/wedding_website/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jfREdxhB24rI",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "X5ksw0x2bNEN",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "5oGrysLNOcLq",
+        "name": "Screen",
+        "projectId": "izEXE37dzqFMYydSKQTMwJ",
+        "contextFilePath": "plasmic/wedding_website/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.327",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.327/dist/plasmic.schema.json"
+}
