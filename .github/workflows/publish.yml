@@ -7,6 +7,8 @@ on:
   workflow_run:
     workflows:
       - Sync, build and deploy Plasmic app
+    types:
+      - completed
 
 permissions:
   contents: read

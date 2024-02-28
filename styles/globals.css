@@ -105,3 +105,13 @@ a {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: 'Gnomon-Shadow';
+  src: url('../public/fonts/Gnomon_-Web.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gnomon-Simple';
+  src: url('../public/fonts/Gnomon_-Simple.ttf') format('truetype');
+}
