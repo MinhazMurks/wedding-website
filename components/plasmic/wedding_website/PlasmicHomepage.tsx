@@ -60,7 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import CopyableLink from "../../CopyableLink"; // plasmic-import: TULi8pNjkL9u/component
 
 import { useScreenVariants as useScreenVariants_5OGrysLnOcLq } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 5oGrysLNOcLq/globalVariant
 
@@ -68,10 +67,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: izEXE37dzqFMYydSKQTMwJ/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S6JrvlGm1vd3/css
-
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: EmGEcYOnfkk0/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: uEz53hchUsbf/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: jXw4_V20_0N6/icon
 
 createPlasmicElementProxy;
 
@@ -88,7 +83,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
   ttitle?: Flex__<"div">;
-  copyableLink?: Flex__<typeof CopyableLink>;
+  ttitle2?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -277,94 +272,17 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"Jennie + Minhaz"}
                   </div>
                   <div
+                    data-plasmic-name={"ttitle2"}
+                    data-plasmic-override={overrides.ttitle2}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text___6T4L6
+                      sty.ttitle2
                     )}
                   >
-                    {"sdafsdasfd"}
+                    {"Jennie + Minhaz"}
                   </div>
                 </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox___1EM0L)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___0I4Nz
-                  )}
-                >
-                  {" "}
-                </div>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___2PpWx)}
-                >
-                  <CopyableLink
-                    data-plasmic-name={"copyableLink"}
-                    data-plasmic-override={overrides.copyableLink}
-                    className={classNames("__wab_instance", sty.copyableLink)}
-                  >
-                    {"aw@gmail.com"}
-                  </CopyableLink>
-                </div>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__qELeh)}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__ymdBu)}
-                  >
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__zmAik
-                      )}
-                      component={Link}
-                      href={"https://www.twitter.com"}
-                      platform={"nextjs"}
-                    >
-                      <IconIcon
-                        className={classNames(projectcss.all, sty.svg__tjU8B)}
-                        role={"img"}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__mkNlV
-                      )}
-                      component={Link}
-                      href={"https://www.dribbble.com"}
-                      platform={"nextjs"}
-                    >
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg__qpwM)}
-                        role={"img"}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link___4Nhws
-                      )}
-                      component={Link}
-                      href={"https://www.github.com"}
-                      platform={"nextjs"}
-                    >
-                      <Icon3Icon
-                        className={classNames(projectcss.all, sty.svg__ay3Le)}
-                        role={"img"}
-                      />
-                    </PlasmicLink__>
-                  </Stack__>
-                </Stack__>
               </div>
             </Stack__>
             <div className={classNames(projectcss.all, sty.freeBox__t14Ss)} />
@@ -376,10 +294,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "ttitle", "copyableLink"],
+  root: ["root", "navigationBar", "ttitle", "ttitle2"],
   navigationBar: ["navigationBar"],
   ttitle: ["ttitle"],
-  copyableLink: ["copyableLink"]
+  ttitle2: ["ttitle2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -388,7 +306,7 @@ type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
   ttitle: "div";
-  copyableLink: typeof CopyableLink;
+  ttitle2: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -453,7 +371,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
     ttitle: makeNodeComponent("ttitle"),
-    copyableLink: makeNodeComponent("copyableLink"),
+    ttitle2: makeNodeComponent("ttitle2"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

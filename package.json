@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@plasmicapp/cli": "^0.1.327",
-    "@plasmicapp/react-web": "^0.2.320",
+    "@plasmicapp/react-web": "^0.2.321",
     "@plasmicpkgs/lottie-react": "^0.0.177",
     "@plasmicpkgs/plasmic-cms": "^0.0.251",
     "@plasmicpkgs/plasmic-nav": "^0.0.160",
