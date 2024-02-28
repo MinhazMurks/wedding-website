@@ -167,11 +167,11 @@
 .freeBox__bDhnJ {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
   width: 100%;
   padding-bottom: 0px;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 800px) {
@@ -183,19 +183,16 @@
   font-size: 70px;
   font-weight: 400;
   color: rgb(255, 255, 255);
+  font-family: "Gnomon-Shadow";
   margin-right: 0px;
   padding-right: 0px;
   width: 100%;
   text-align: center;
-  position: relative;
-  left: auto;
-  top: auto;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
   min-width: 0;
-
-
-  font-family: "Gnomon-Shadow";
-  font-variation-settings: "DIST" 0, "TOTD" 500;
-  font-weight: normal;
 }
 @media (min-width: 0px) and (max-width: 800px) {
   .ttitle {
