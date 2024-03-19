@@ -5,7 +5,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  background: #000000;
+  background: linear-gradient(0deg, #540015 0%, #800020 100%);
   min-width: 0;
   min-height: 0;
   padding: 0px 0%;
@@ -179,7 +179,7 @@
     width: 322px;
   }
 }
-.ttitle {
+.titleShadow {
   font-size: 70px;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -195,17 +195,17 @@
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 800px) {
-  .ttitle {
+  .titleShadow {
     text-align: center;
     font-size: 42px;
   }
 }
 @media (min-width: 0px) and (max-width: 400px) {
-  .ttitle {
+  .titleShadow {
     font-size: 36px;
   }
 }
-.ttitle2 {
+.titleSimple {
   font-size: 70px;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -220,13 +220,13 @@
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 800px) {
-  .ttitle2 {
+  .titleSimple {
     text-align: center;
     font-size: 42px;
   }
 }
 @media (min-width: 0px) and (max-width: 400px) {
-  .ttitle2 {
+  .titleSimple {
     font-size: 36px;
   }
 }

@@ -65,6 +65,7 @@ import { useScreenVariants as useScreenVariants_5OGrysLnOcLq } from "./PlasmicGl
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: izEXE37dzqFMYydSKQTMwJ/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: S6JrvlGm1vd3/css
 
@@ -82,8 +83,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
-  ttitle?: Flex__<"div">;
-  ttitle2?: Flex__<"div">;
+  titleShadow?: Flex__<"div">;
+  titleSimple?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -145,6 +146,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -217,7 +219,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   href={`/travel-lodging`}
                   platform={"nextjs"}
                 >
-                  {"Travel + Lodging"}
+                  {"Destination"}
                 </PlasmicLink__>
                 <PlasmicLink__
                   className={classNames(
@@ -261,23 +263,23 @@ function PlasmicHomepage__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.freeBox__r7H6)}>
                 <div className={classNames(projectcss.all, sty.freeBox__bDhnJ)}>
                   <div
-                    data-plasmic-name={"ttitle"}
-                    data-plasmic-override={overrides.ttitle}
+                    data-plasmic-name={"titleShadow"}
+                    data-plasmic-override={overrides.titleShadow}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.ttitle
+                      sty.titleShadow
                     )}
                   >
                     {"Jennie + Minhaz"}
                   </div>
                   <div
-                    data-plasmic-name={"ttitle2"}
-                    data-plasmic-override={overrides.ttitle2}
+                    data-plasmic-name={"titleSimple"}
+                    data-plasmic-override={overrides.titleSimple}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.ttitle2
+                      sty.titleSimple
                     )}
                   >
                     {"Jennie + Minhaz"}
@@ -294,10 +296,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navigationBar", "ttitle", "ttitle2"],
+  root: ["root", "navigationBar", "titleShadow", "titleSimple"],
   navigationBar: ["navigationBar"],
-  ttitle: ["ttitle"],
-  ttitle2: ["ttitle2"]
+  titleShadow: ["titleShadow"],
+  titleSimple: ["titleSimple"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -305,8 +307,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
-  ttitle: "div";
-  ttitle2: "div";
+  titleShadow: "div";
+  titleSimple: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -370,8 +372,8 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    ttitle: makeNodeComponent("ttitle"),
-    ttitle2: makeNodeComponent("ttitle2"),
+    titleShadow: makeNodeComponent("titleShadow"),
+    titleSimple: makeNodeComponent("titleSimple"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import YouTube from "@plasmicpkgs/react-youtube";
 import Button from "../../Button"; // plasmic-import: Gh37LSrWbm1n/component
 import TextInput from "../../TextInput"; // plasmic-import: q3t59J6BzNMN/component
@@ -67,10 +68,10 @@ import { useScreenVariants as useScreenVariants_5OGrysLnOcLq } from "./PlasmicGl
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: izEXE37dzqFMYydSKQTMwJ/projectcss
 import sty from "./PlasmicTravelLodging.module.css"; // plasmic-import: qC0nhTpUWlKT/css
 
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: 4OSv8q77pH5j/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: AylNlyNLQHZw/icon
 import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: hosQIuGq9s5_/icon
 import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: 5oZLK7TbgCyl/icon
@@ -92,8 +93,7 @@ export type PlasmicTravelLodging__OverridesType = {
   root?: Flex__<"div">;
   headerMainSection?: Flex__<"div">;
   container?: Flex__<"div">;
-  menu?: Flex__<"div">;
-  menuBar?: Flex__<"div">;
+  navigationBar?: Flex__<typeof NavigationBar>;
   h1?: Flex__<"h1">;
   section1?: Flex__<"div">;
   youTube?: Flex__<typeof YouTube>;
@@ -188,6 +188,7 @@ function PlasmicTravelLodging__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -201,251 +202,110 @@ function PlasmicTravelLodging__RenderFunc(props: {
               data-plasmic-override={overrides.container}
               className={classNames(projectcss.all, sty.container)}
             >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"menu"}
-                data-plasmic-override={overrides.menu}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.menu)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"menuBar"}
-                  data-plasmic-override={overrides.menuBar}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.menuBar)}
-                >
+              <NavigationBar
+                data-plasmic-name={"navigationBar"}
+                data-plasmic-override={overrides.navigationBar}
+                brand={
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__bqNEj
+                    )}
+                    component={Link}
+                    href={"#"}
+                    platform={"nextjs"}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___2X9PL)}
+                      displayHeight={"40px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      src={
+                        "https://static1.plasmic.app/nav-logo-placeholder.svg"
+                      }
+                    />
+                  </PlasmicLink__>
+                }
+                className={classNames("__wab_instance", sty.navigationBar)}
+                closeButton={
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__nadU)}
-                    displayHeight={"100%"}
+                    className={classNames(sty.img__yMzOh)}
+                    displayHeight={"auto"}
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"50px"}
+                    displayMaxWidth={"none"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    src={{
-                      src: "/plasmic/wedding_website/images/image2.svg",
-                      fullWidth: 150,
-                      fullHeight: 150,
-                      aspectRatio: 1
-                    }}
+                    displayWidth={"auto"}
+                    src={"https://static1.plasmic.app/close.svg"}
                   />
+                }
+                forceOpenMenu={false}
+                itemsGap={8}
+                menuItems={
+                  <React.Fragment>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__pH7Et
+                      )}
+                      component={Link}
+                      href={"/"}
+                      platform={"nextjs"}
+                    >
+                      {"Home"}
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__um2O
+                      )}
+                      component={Link}
+                      href={`/travel-lodging`}
+                      platform={"nextjs"}
+                    >
+                      {"Destination"}
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link___79Qhx
+                      )}
+                      component={Link}
+                      href={"/"}
+                      platform={"nextjs"}
+                    >
+                      {"RSVP"}
+                    </PlasmicLink__>
+                  </React.Fragment>
+                }
+                openButton={
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__vVBdN)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={"https://static1.plasmic.app/menu.svg"}
+                  />
+                }
+                responsiveBreakpoint={768}
+              />
 
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__igmj)}
-                  >
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__x7TmM
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__oWeye)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__l3QEb
-                        )}
-                      >
-                        {hasVariant(globalVariants, "screen", "tabletOrSmaller")
-                          ? "About"
-                          : "About"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__wYus1)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__cJmi
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__kQMxW)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__lJa8I
-                        )}
-                      >
-                        {"Rooms"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__eptzo)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link___8Q9Vh
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___2CbEu
-                          )}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__xe5UE
-                        )}
-                      >
-                        {"Spa"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__f8BIw)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link___4SPo2
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(
-                            projectcss.all,
-                            sty.svg___6E5Y2
-                          )}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__qZeTx
-                        )}
-                      >
-                        {"Restaurant"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__kzVb7)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__p9Y7S
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__iysnO)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text___9XZz
-                        )}
-                      >
-                        {"Amenities"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__moFXj)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                    <Stack__
-                      as={PlasmicLink__}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__q4HJm
-                      )}
-                      component={Link}
-                      platform={"nextjs"}
-                    >
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__f7F9J)}
-                          role={"img"}
-                        />
-                      ) : null}
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__mV6Vw
-                        )}
-                      >
-                        {"Reservations"}
-                      </div>
-                      {false ? (
-                        <Icon4Icon
-                          className={classNames(projectcss.all, sty.svg__ekiAv)}
-                          role={"img"}
-                        />
-                      ) : null}
-                    </Stack__>
-                  </Stack__>
-                </Stack__>
-              </Stack__>
               <Stack__
                 as={"div"}
                 hasGap={true}
@@ -1405,8 +1265,7 @@ const PlasmicDescendants = {
     "root",
     "headerMainSection",
     "container",
-    "menu",
-    "menuBar",
+    "navigationBar",
     "h1",
     "section1",
     "youTube",
@@ -1421,16 +1280,9 @@ const PlasmicDescendants = {
     "textInput",
     "blockquote"
   ],
-  headerMainSection: [
-    "headerMainSection",
-    "container",
-    "menu",
-    "menuBar",
-    "h1"
-  ],
-  container: ["container", "menu", "menuBar", "h1"],
-  menu: ["menu", "menuBar"],
-  menuBar: ["menuBar"],
+  headerMainSection: ["headerMainSection", "container", "navigationBar", "h1"],
+  container: ["container", "navigationBar", "h1"],
+  navigationBar: ["navigationBar"],
   h1: ["h1"],
   section1: ["section1", "youTube", "rowContainer8"],
   youTube: ["youTube"],
@@ -1460,8 +1312,7 @@ type NodeDefaultElementType = {
   root: "div";
   headerMainSection: "div";
   container: "div";
-  menu: "div";
-  menuBar: "div";
+  navigationBar: typeof NavigationBar;
   h1: "h1";
   section1: "div";
   youTube: typeof YouTube;
@@ -1539,8 +1390,7 @@ export const PlasmicTravelLodging = Object.assign(
     // Helper components rendering sub-elements
     headerMainSection: makeNodeComponent("headerMainSection"),
     container: makeNodeComponent("container"),
-    menu: makeNodeComponent("menu"),
-    menuBar: makeNodeComponent("menuBar"),
+    navigationBar: makeNodeComponent("navigationBar"),
     h1: makeNodeComponent("h1"),
     section1: makeNodeComponent("section1"),
     youTube: makeNodeComponent("youTube"),
